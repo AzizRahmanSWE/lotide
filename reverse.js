@@ -11,4 +11,8 @@ function reverseString(str) {
   }
   return reversed;
 }
-console.log(reverseString);
+for (let i = 0; i < array.length; i++) {
+  console.log(reverseString(array[i])); //adds and prints out reversed string.
+}
+
+//console.log(reverseString);
