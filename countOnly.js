@@ -40,3 +40,8 @@ assertEqual(result["Jason"], 1);
 assertEqual(result["Karima"], undefined);
 assertEqual(result["Fang"], 2);
 assertEqual(result["Agouhanna"], undefined);
+
+// assertEqual(result["Jason"], 1);
+// assertEqual(result["Karima"], undefined);
+// assertEqual(result["Fang"], 2);
+// assertEqual(result["Agouhanna"], undefined);
