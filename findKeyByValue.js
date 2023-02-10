@@ -11,7 +11,7 @@ const assertEqual = function(actual, expected) {
 };
 
 const findKeyByValue = function(object, value) {
-  for (let key of Object.keys(object)) {//iterates over the properties of the object.
+  for (let key of Object.keys(object)) {//iterates over the keys of the object.
     if (object[key] === value) {//checks if the object key matches the value.
       return key;
     }
@@ -26,6 +26,8 @@ const bestTVShowsByGenre = {
   "drama":  "The Wire"
 };
 
+
+//Test Cases Using assertEqual.
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 assertEqual(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine Nine"), "drama");//no dash.
