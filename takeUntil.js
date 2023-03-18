@@ -16,9 +16,6 @@ const assertArraysEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
-console.log(assertArraysEqual([1, 2, 3], [1, 2, 3])); // => should PASS
-
 
 const takeUntil = function(array, callback) {
   let result = [];
