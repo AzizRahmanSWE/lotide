@@ -1,15 +1,10 @@
-const assertEqual = function(actual, expected) {
-  if (actual.toString() === expected.toString()) {
-    console.log(`🛑🛑🛑 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`✅✅✅ Assertion Failed: ${actual} !== ${expected}`);
-  }
-
-};
+const assertEqual = require('./assertEqual');
 
 const tail = function(array) {
-  return array.slice(1);
+  if (array.length > 1) {
+    return array.slice(1);
+  }
 };
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
+//exports the function tail.
+module.exports = tail;
