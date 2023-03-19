@@ -24,8 +24,8 @@ const assertEqual = function(actual, expected) {
 // The value for each key in one object is the same as the value for that same key in the other object
 
 const eqObjects = function(obj1, obj2) {
-let key1 = Object.keys(obj1);
-let key2 = Object.keys(obj2);
+const key1 = Object.keys(obj1);
+const key2 = Object.keys(obj2);
 
 let result = true;
 
@@ -41,6 +41,7 @@ let result = true;
   return result
 };
 
+module.exports = eqObjects;
 
 //Test codes//
 const ab = { a: "1", b: "2", c: '4' };

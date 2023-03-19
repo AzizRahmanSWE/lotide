@@ -1,21 +1,5 @@
-const eqArrays = function(array1, array2) {
-  for (let i = 0; i < array1.length; i++) { //iterates and compares every index
-    if (array1[i] !== array2[i]) {
-      console.log("false");
-      return false;
-    }
-  }
-  console.log("true");
-  return true;
-};
- 
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArraysEqual')
 
 const words = ["ground", "control", "to", "major", "tom", "aziz", "bobby"];
 
@@ -34,3 +18,5 @@ console.log(result1);
 
 //test case///
 assertArraysEqual(result1, ['g', 'c', 't', 'm', 't', 'a', 'b']);
+
+module.exports = map

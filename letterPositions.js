@@ -1,21 +1,6 @@
-const eqArrays = function(array1, array2) {
-  for (let i = 0; i < array1.length; i++) { //iterates and compares every index
-    if (array1[i] !== array2[i]) {
-      console.log("false");
-      return false;
-    }
-  }
-  console.log("true");
-  return true;
-};
+const eqArrays = require('./eqArrays');
  
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertArraysEqual = require('./assertArraysEqual')
 
 const countLetters = function(sentence) {
   let result = {}; // return the result in an object
@@ -33,9 +18,12 @@ const countLetters = function(sentence) {
   return result;
 };
 
-
 console.log(countLetters("lighthouse in the house"));
+module.exports = countLetters;
 
 ///////////// TEST CODE
 
 assertArraysEqual(countLetters("hello").e, [1]);
+assertArraysEqual(countLetters("hello").l, [2, 3])
+assertArraysEqual(countLetters("hello").h, [0])
+assertArraysEqual(countLetters("hello").o, [4])

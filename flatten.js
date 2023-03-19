@@ -1,5 +1,3 @@
-const { eq } = require("lodash");
-
 const eqArrays = function (array1, array2) {
   for (let i = 0; i < array1.length; i++) { //iterates and compares every index
      if (array1[i] !== array2[i]) {
@@ -33,5 +31,8 @@ const flatten = function (array) {
   return result;
 };
 
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1 , 2, 3, 4, 5, 6]);
+module.exports = flatten;
 
+//Test Codes
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1 , 2, 3, 4, 5, 6]);
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6, 7, 8]]), [1 , 2, 3, 4, 5, 6, 7, 8]);

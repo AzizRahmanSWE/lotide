@@ -2,14 +2,7 @@
 
 //For example, countLetters('LHL') should return results indicating that L appears twice, and H once.
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-
-};
+const assertEqual = require('./assertEqual');
 
 const countLetters = function(sentence) {
   let result = {};
@@ -23,4 +16,5 @@ const countLetters = function(sentence) {
   return result;
 };
 
+module.exports = countLetters;
 console.log(countLetters("lighthouse in the house"));

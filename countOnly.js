@@ -1,11 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-
-};
+const assertEqual = require('./assertEqual');
 
 const countOnly = function(allItems, itemsToCount) {
   let results = {};
@@ -41,7 +34,5 @@ assertEqual(result["Karima"], undefined);
 assertEqual(result["Fang"], 2);
 assertEqual(result["Agouhanna"], undefined);
 
-// assertEqual(result["Jason"], 1);
-// assertEqual(result["Karima"], undefined);
-// assertEqual(result["Fang"], 2);
-// assertEqual(result["Agouhanna"], undefined);
+
+module.exports = countOnly;
