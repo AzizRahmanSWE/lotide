@@ -1,7 +1,7 @@
 {
   "name": "@azizrahman/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Smaller version of the lotide library made for educational purposes.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Friies/lotide.git"
   },
-  "author": "Aziz Rahman <>",
+  "author": "Aziz Rahman <bahram.parsa2019@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Friies/lotide/issues"

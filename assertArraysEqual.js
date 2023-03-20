@@ -8,5 +8,4 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-// console.log(assertArraysEqual([1, 2, 3], [1, 2, 3])); // => should PASS
 module.exports = assertArraysEqual;

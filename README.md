@@ -12,11 +12,11 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Install it:**
 
-`npm install @azizrahman/lotide`
+`npm install @Friies/lotide`
 
 **Require it:**
 
-`const _ = require('@Friies/lotide');`
+`const _ = require('@azizrahman/lotide');`
 
 **Call it:**
 
@@ -37,7 +37,6 @@ The following functions are currently implemented:
 * `findKeyByValue`: scans for a given key on an object and returns the value for the key.
 * `flatten`: function that flattens an array of arrays into a single-level array.
 * `head`: returns the first element from an array.
-* `index`: includes all the functions within an object.
 * `letterPositions`: returns the indexes in the string where each character is found.
 * `map`: returns an array with the results of calling a given function on every element in the calling array.
 * `middle`: returns the middle element of an array; it returns two middle if the number of elements are even.
