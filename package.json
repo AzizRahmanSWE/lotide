@@ -1,6 +1,6 @@
 {
   "name": "@azizrahman/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Smaller version of the lotide library made for educational purposes.",
   "main": "index.js",
   "directories": {
